@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./calendarEvent.css"/>
+</head>
+<style>
+    body
+    {
+        background-color: #861717;
+    }
+#Calendar
+{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    padding: 10px;
+}
+</style>
+<body>
+    <div id="Calendar"></div>
+</body>
+<script src="./_calendarEvent.js"></script>
+<script>
+    jsonEvents=[{date:"2020-10-10",eventTitle:"Jessie Bday"}];
+    CreateCalendarEvents(jsonEvents);
+</script>
+
+</html>

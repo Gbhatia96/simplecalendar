@@ -1,0 +1,65 @@
+﻿table {
+    border: 1px solid #ccccd7;
+    background-color: white;
+    width: 100%;
+    height: 100%;   
+    table-layout: fixed;
+    box-shadow: 3px 3px #767171;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+thead > tr > th {
+    padding: 1%;
+    font-weight: 600;
+    text-align:center;
+    height: 10%;
+}
+
+.calendar-button {
+    border: none;
+    background-color: transparent;
+}
+.calendar-button:hover{
+    transform:scale(1.5);
+    cursor: pointer;
+}
+
+tbody > tr > td:hover {
+    background-color: #daedff;
+    cursor: default;
+    transform:scale(1.05);
+}
+
+tbody > tr > td {
+    position: relative;
+    border: 1px solid #d5d5d5;
+    width: auto;
+    height: auto;
+}
+
+.today {
+    background-color: green;
+    color:white;
+}
+
+.inactive-month {
+    color: darkgray;
+}
+
+
+.date {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    font-size:100%;
+}
+
+.event {
+    position: absolute;
+    font-size: 10px;
+    bottom: 5px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+}
