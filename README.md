@@ -10,3 +10,6 @@ Add a simple yet fully customizable calendar to your website along with Calendar
                ];</code>
  * Initialize calendar by calling<code> CreateCalendarEvents(jsonEvents); </code>in your script
  * Style the calendar as per your needs
+
+## Live Demo
+https://gbhatia96.github.io/simplecalendar
