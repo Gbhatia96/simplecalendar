@@ -1,4 +1,4 @@
-﻿function CreateBasicCalendar() {
+function CreateBasicCalendar() {
     CreateCalendar(new Date(), "");
 }
 
@@ -6,8 +6,8 @@ function CreateCalendarEvents(json) {
     CreateCalendar(new Date(), json);
 }
 
-var weekDays = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
-var numberOfCalendarRows = 6;
+var weekDays = ["S", "M", "T", "W", "T", "F", "S"];
+var numberOfCalendarRows = 5;
 var inputDate;
 
 function CreateCalendar(date, jsonEvents) {
@@ -35,17 +35,12 @@ function CreateCalendar(date, jsonEvents) {
     var calendarTemplate = "";
     calendarTemplate += `<table id="calendartable">
     <thead>
-    <tr>
-    <th colspan="7">
-    ${inputDate.getFullYear()}
-    </th>
-    </tr> 
-         <tr id="monthheader">  
+        <tr id="monthheader">  
             <th colspan="2">
                 <button class="calendar-button" onclick="NavigateLeft(jsonEvents)"><</button>
             </th>
             <th colspan="3">
-                ${inputDate.toLocaleString('default', { month: 'long' })}&nbsp; 
+                ${inputDate.toLocaleString('default', { month: 'long' })}&nbsp; ${inputDate.getFullYear()}
             </th>
             <th colspan="2">
                 <button class="calendar-button" onclick="NavigateRight(jsonEvents)">></button>
@@ -54,7 +49,7 @@ function CreateCalendar(date, jsonEvents) {
          <tr>`;
 
     weekDays.forEach(function (weekday) {
-        calendarTemplate += `<th style="color:crimson">${weekday}</th>`;
+        calendarTemplate += `<th style="color:white">${weekday}</th>`;
     })
 
     calendarTemplate += `       
